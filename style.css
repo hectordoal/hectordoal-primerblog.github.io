@@ -1,22 +1,22 @@
 /* 1. Estilo General: Afecta a toda la página */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif; /* Cambia la letra típica por una más moderna */
-    background-color: #f8f9fa; /* Un color de fondo gris muy clarito, casi blanco */
-    color: #333; /* El color del texto (gris oscuro, cansa menos la vista que el negro puro) */
+    font-family: "Calibri", "Candara", "Segoe UI", Optima, Arial, sans-serif; /* Cambia la letra */
+    background-color: #dadada; /* Un color de fondo */
+    color: #000000; /* El color del texto */
     margin: 0;
     padding: 0;
-    line-height: 1.6; /* Da espacio entre líneas de texto para que se lea mejor */
+    line-height: 1.6; /* espacio entre líneas de texto */
 }
 
 /* 2. La Cabecera: El título del blog */
 header {
-    background-color: #2c3e50; /* Un azul oscuro elegante */
+    background-color: #2c3e50; 
     color: white;
     padding: 2rem;
     text-align: center;
 }
 
-/* 3. El Contenedor: Para que el blog no ocupe todo el ancho en pantallas grandes */
+/* 3. El Contenedor main : Para que el blog no ocupe todo el ancho de la pantalla */
 main {
     max-width: 900px; /* Ancho máximo */
     margin: 20px auto; /* Centra el contenido en la pantalla */
@@ -25,14 +25,14 @@ main {
 
 /* 4. Las Tarjetas de Receta (Los <article>) */
 article {
-    background: white;
+    background: rgb(240, 240, 240);
     margin-bottom: 30px;
     padding: 25px;
     border-radius: 10px; /* Esquinas redondeadas */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para que parezca que flota */
 }
 
-/* 5. Las Imágenes: Muy importante para que no se descontrolen */
+/* 5. Las Imágenes: */
 img {
     max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
     height: auto;    /* Mantiene la proporción para que no se vea estirada */
@@ -51,4 +51,15 @@ a {
 a:hover {
     color: #d35400; /* Se oscurece un poco cuando pasas el ratón por encima */
     text-decoration: underline;
+}
+
+/* 7. Cursor: Cuando pasamos el cursor por la imagen cambiamos el aspecto */
+.foto-indice {
+    cursor: pointer; /* Cambia el cursor a una mano */
+    transition: transform 0.3s; /* Hace que el efecto de abajo sea suave */
+}
+
+/* 8. Foto indice: Cambiar el tamaño de la foto para que se vea que hay interacción */
+.foto-indice:hover {
+    transform: scale(1.02); /* La foto se hace un poco más grande al pasar el ratón */
 }
